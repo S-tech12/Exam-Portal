@@ -20,7 +20,7 @@ export default function PastExams() {
             <span className="badge completed-badge">COMPLETED</span>
             <h3>DBMS</h3>
             <p className="exam-date">📆 10 Jan 2025</p>
-            <button className="secondary-btn">View Result</button>
+            <button className="secondary-btn" onClick={()=> navigate("/ResultPage")}>View Result</button>
           </div>
         </div>
 

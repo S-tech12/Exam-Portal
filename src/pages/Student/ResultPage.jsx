@@ -1,14 +1,17 @@
+import { useNavigate } from "react-router-dom";
 import "../../CSS/ResultPage.css";
 import { FaHome } from "react-icons/fa";
 
 export default function ExamResultPage() {
+
+  const navigate = useNavigate();
   return (
     <>
       {/* NAVBAR */}
       <nav className="result-navbar">
         <div className="nav-left">ExamPortal</div>
         <div className="nav-right">
-          <FaHome className="home-icon" />
+          <FaHome className="home-icon" onClick={()=> navigate("/StudentDashboard")}/>
         </div>
       </nav>
 
