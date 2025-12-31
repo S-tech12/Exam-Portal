@@ -1,0 +1,229 @@
+.exam-page {
+  background: #f4f6f9;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* QUESTION PALETTE */
+.question-palette-top {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.q-box {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
+}
+
+.q-box.attempted {
+  background: #4caf50;
+  color: white;
+}
+
+.q-box.active {
+  border: 2px solid #1976d2;
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.25);
+  background: #1976d2;
+  font-weight: 700;
+}
+
+
+/* TOP BAR */
+.exam-topbar {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.timer-warning {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.warnings {
+  margin-top: 5px;
+  color: #e53935;
+}
+
+.status {
+  margin-top: 10px;
+}
+
+.status span {
+  margin-right: 15px;
+  font-weight: 600;
+}
+
+.attempted { color: #4caf50; }
+.not-attempted { color: #e53935; }
+.marked { color: #ff9800; }
+
+
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-marks {
+  font-weight: bold;
+  color: #1976d2;
+}
+
+/* OPTIONS */
+.options {
+  margin-top: 20px;
+}
+
+.option-box {
+    padding: 14px 18px;
+    border-radius: 10px;
+    border: 2px solid #dfe3e8;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background: #fff;
+}
+
+.option-box:hover {
+    background: #f5f7fa;
+}
+
+.option-box.selected {
+    background: #e6f4ea;
+    border-color: #4caf50;
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+
+/* HEADER TOP */
+/* PROFESSIONAL EXAM HEADER */
+.exam-header-pro {
+  background: white;
+  padding: 16px 28px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.exam-header-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.exam-header-item .label {
+  font-size: 13px;
+  color: #6b7280; /* gray */
+  font-weight: 500;
+}
+
+.exam-header-item .value {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1f2937; /* dark text */
+  margin-top: 2px;
+}
+
+.exam-header-divider {
+  width: 1px;
+  height: 36px;
+  background: #e5e7eb;
+}
+
+
+/* MAIN LAYOUT */
+.question-layout {
+  display: flex;
+  gap: 20px;
+}
+
+/* QUESTION CARD (LEFT) */
+.question-card {
+  flex: 3;
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+}
+
+/* STATUS BOX (RIGHT) */
+.side-status-box {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+  font-weight: 600;
+}
+
+.side-status-box .timer {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.side-status-box .warnings {
+  color: #e53935;
+  margin-bottom: 15px;
+}
+
+.side-status-box .status {
+  margin-bottom: 10px;
+}
+
+.status-attempted { color: #4caf50; }
+.status-not-attempted { color: #e53935; }
+.status-marked { color: #ff9800; }
+
+
+
+.nav-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px; /* close buttons */
+}
+
+.nav-buttons button {
+  padding: 12px 22px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: #1976d2;
+  color: white;
+}
+
+.submit-btn {
+  background: #e53935;
+}
+
+/* TOP BAR UPDATED */
+.exam-topbar {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* QUESTION PALETTE INSIDE TOP BAR */
+.question-palette-top {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+/* NO CHANGE to q-box styles (already working perfectly) */

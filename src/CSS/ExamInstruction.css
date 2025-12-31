@@ -1,0 +1,97 @@
+.instructions-container {
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
+  background: #f4f6f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Card */
+.instructions-card {
+  width: 100%;
+  max-width: 1200px;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  padding: 2.5rem 2rem;
+  color: #333;
+}
+
+/* Titles */
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.card-subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+
+.instructions-scroll h4 {
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* List Styling */
+.instructions-scroll ul {
+  padding-left: 20px;
+}
+
+.instructions-scroll li {
+  margin-bottom: 12px;
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+
+/* Badge styling */
+.free-badge {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.paid-badge {
+  background-color: #ffb300;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Scrollbar */
+.instructions-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.instructions-scroll::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+/* Button */
+.enter-exam-btn {
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.enter-exam-btn:hover {
+  background: #43a047;
+}
