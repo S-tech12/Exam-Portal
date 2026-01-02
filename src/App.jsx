@@ -10,6 +10,14 @@ import ExamInstructions from "./pages/Student/ExamInstructions";
 import ExamPage from "./pages/Student/ExamPage";
 import ResultPage from "./pages/Student/ResultPage"
 import ProfilePage from "./pages/Student/ProfilePage";
+import CreateExam from "./pages/Faculty/CreateExam"
+import ExamCalendar from "./pages/ExamCalendar";
+import UpcomingExamForFaculty from "./pages/Faculty/UpcomingExam";
+import CurrentExamForFaculty from "./pages/Faculty/CurrentExams";
+import PastExamForFaculty from "./pages/Faculty/PastExams";
+import FacultyExamAnalysis from "./pages/Faculty/AnalysisPage";
+import FacultyPaperChecking from "./pages/Faculty/PaperCheckingPage";
+import FacultyAnswerChecking from "./pages/Faculty/FacultyAnswerChecking";
 
 function App() {
   return (
@@ -27,7 +35,16 @@ function App() {
           <Route path="/ExamPage" element={<ExamPage />} />
           <Route path="/ResultPage" element={<ResultPage />} />
           <Route path="/student/ProfilePage" element={<ProfilePage />} />
-         
+          <Route path="/CreateExam" element={<CreateExam />} />
+          <Route path="/ExamCalendar" element={<ExamCalendar />} />
+          <Route path="/Faculty/UpcomingExams" element={<UpcomingExamForFaculty />} />
+          <Route path="/Faculty/CurrentExams" element={<CurrentExamForFaculty />} />
+          <Route path="/Faculty/PastExams" element={<PastExamForFaculty />} />
+          <Route path="/Faculty/PastExams/FacultyExamAnalysis" element={<FacultyExamAnalysis />} />
+          <Route path="/Faculty/PastExams/FacultyPaperChecking" element={<FacultyPaperChecking />} />
+          <Route path="/Faculty/PastExams/FacultyAnswerChecking" element={<FacultyAnswerChecking />} />
+
+
         </Routes>
       </BrowserRouter>
     </>

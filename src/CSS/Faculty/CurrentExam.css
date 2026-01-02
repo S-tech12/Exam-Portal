@@ -1,0 +1,90 @@
+.current-exam-page {
+  padding: 30px;
+  background: #f4f6f8;
+  min-height: calc(100vh - 160px);
+}
+
+/* SUMMARY */
+.exam-summary {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+}
+
+.stat-box {
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: #e5e7eb;
+  text-align: center;
+}
+
+.stat-box.active {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.stat-box.submitted {
+  background: #e0f2fe;
+  color: #075985;
+}
+
+.stat-box.warning {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+/* TABLE */
+.monitor-table {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.green { color: #16a34a; }
+.yellow { color: #ca8a04; }
+.red { color: #dc2626; }
+
+.warn-row {
+  background: #fff7ed;
+}
+
+.danger-row {
+  background: #fef2f2;
+}
+
+button {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+button.warn {
+  background: #facc15;
+}
+
+button.danger {
+  background: #ef4444;
+  color: white;
+}

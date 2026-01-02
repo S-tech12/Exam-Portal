@@ -1,0 +1,68 @@
+.paper-page {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* EACH ROW AS SEPARATE 3D BLOCK */
+.paper-row-3d {
+    display: grid;
+    grid-template-columns: 70px 1fr 130px;
+    align-items: center;
+
+    background: white;
+    margin-bottom: 18px;
+    border-radius: 14px;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.10),
+        inset 0 1px 0 rgba(255,255,255,0.6);
+
+    cursor: pointer;
+    transition: all 0.25s ease;
+    overflow: hidden;
+}
+
+.paper-row-3d:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 16px 35px rgba(0,0,0,0.15);
+}
+
+/* COMMON COLUMN STYLE */
+.paper-row-3d .col {
+    padding: 18px 20px;
+    font-size: 16px;
+}
+
+/* VERTICAL SEPARATORS */
+.paper-row-3d .rank,
+.paper-row-3d .name {
+    border-right: 1px solid #e5e7eb;
+}
+
+/* RANK */
+.rank {
+    font-weight: 700;
+    text-align: center;
+    color: #444;
+}
+
+/* NAME */
+.name {
+    font-weight: 500;
+    color: #111;
+}
+
+/* ACTION */
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.marks {
+    color: #2563eb;
+    font-weight: 700;
+}

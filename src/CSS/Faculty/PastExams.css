@@ -1,0 +1,83 @@
+.past-exams-page {
+  padding: 30px;
+  background: #f4f6f8;
+  min-height: calc(100vh - 160px);
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* TABLE CARD */
+.exam-table-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  background: #f1f5f9;
+  font-size: 14px;
+}
+
+/* STATUS COLORS */
+.declared {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.checking {
+  color: #ca8a04;
+  font-weight: 600;
+}
+
+.pending {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* ROW HIGHLIGHTS */
+.checking-row {
+  background: #fff7ed;
+}
+
+.pending-row {
+  background: #fef2f2;
+}
+
+/* BUTTONS */
+button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button.view {
+  background: #2563eb;
+  color: white;
+}
+
+button.check {
+  background: #facc15;
+}
+
+button.start {
+  background: #ef4444;
+  color: white;
+}

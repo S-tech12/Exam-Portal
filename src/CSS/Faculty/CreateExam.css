@@ -1,0 +1,107 @@
+.create-exam-wrapper {
+  max-width: 1100px;
+  margin: auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+}
+
+.section-title {
+  font-size: 18px;
+  margin: 35px 0 15px;
+  color: #111827;
+  border-left: 4px solid #2563eb;
+  padding-left: 12px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.option-row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.option-row label {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.action-area {
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+  margin-top: 40px;
+}
+
+.cancel-btn {
+  background: #e5e7eb;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background: #2563eb;
+  color: white;
+  padding: 12px 26px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: #1e40af;
+}
+
+.security-note {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #374151;
+  text-align: center;
+}
+
+.pdf-upload-box {
+  margin-top: 20px;
+}
+
+.pdf-warning {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.pdf-warning.manual {
+  color: #b45309;
+}
+
+.pdf-warning.ai {
+  color: #047857;
+}
