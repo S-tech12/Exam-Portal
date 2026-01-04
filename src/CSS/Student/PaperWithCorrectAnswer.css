@@ -1,0 +1,184 @@
+.result-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  z-index: 1000;
+}
+
+.nav-left {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1976d2;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.home-icon {
+  font-size: 40px;
+  cursor: pointer;
+  color: #444;
+  transition: 0.3s;
+}
+
+.home-icon:hover {
+  color: #1976d2;
+  transform: scale(1.1);
+}
+
+
+.review-page {
+  max-width: 1000px;
+  margin: auto;
+  padding: 25px;
+  margin-top: 5rem;
+}
+
+.info-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.info-card h2 {
+  margin-bottom: 5px;
+}
+
+.info-card p span {
+  font-weight: bold;
+  color: #1976d2;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.info-row label {
+  font-size: 14px;
+  color: #777;
+}
+
+
+.question-boxes {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.q-box {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+
+.q-box.green {
+  background: #28a745;
+}
+
+.q-box.red {
+  background: #dc3545;
+}
+
+.question-card {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+  border-left: 6px solid;
+}
+
+.question-card.correct {
+  border-color: #28a745;
+}
+
+.question-card.wrong {
+  border-color: #dc3545;
+}
+
+.question-header-ui {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marks {
+  font-size: 14px;
+  color: #666;
+}
+
+
+.options {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.option {
+  padding: 14px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  font-size: 15px;
+}
+
+
+.correct-option {
+  background: #d4edda;
+  border: 1px solid #28a745;
+}
+
+.wrong-option {
+  background: #f8d7da;
+  border: 1px solid #dc3545;
+}
+
+.answer-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+.green-text {
+  color: #28a745;
+}
+
+.red-text {
+  color: #dc3545;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.pagination button {
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #0d6efd;
+  color: white;
+}
+
+.pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

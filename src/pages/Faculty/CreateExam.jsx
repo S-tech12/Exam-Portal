@@ -86,7 +86,11 @@ export default function FacultyCreateExam() {
             <div className="form-grid">
               <div className="form-group">
                 <label>Student Batch</label>
-                <input type="text" placeholder="2022-2026" />
+                <select>
+                  <option>2022-26</option>
+                  <option>2023-27</option>
+                  <option>2024-28</option>
+                </select>
               </div>
 
               <div className="form-group">

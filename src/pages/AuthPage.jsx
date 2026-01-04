@@ -163,28 +163,42 @@ export default function AuthPage() {
     }
   };
 
-  const handleForgotPassword = () => {
-    // Generate 3 random numbers
+  const handleForgotPassword = async () => {
+    // STEP 1: ASK FOR EMAIL
+    const { value: email } = await Swal.fire({
+      title: "Forgot Password",
+      input: "email",
+      inputLabel: "Enter your registered email ID",
+      inputPlaceholder: "example@email.com",
+      confirmButtonText: "Send Verification",
+      allowOutsideClick: false,
+      preConfirm: (value) => {
+        if (!value) {
+          Swal.showValidationMessage("Email is required");
+        }
+        return value;
+      },
+    });
+
+    if (!email) return;
+
+    // STEP 2: GENERATE NUMBERS
     const numbers = Array.from({ length: 3 }, () =>
-      Math.floor(Math.random() * 100)
+      Math.floor(Math.random() * 100) // 3-digit numbers
     );
 
-    // Pick one as correct
     const correctNumber = numbers[Math.floor(Math.random() * 3)];
 
-    Swal.fire({
-      title: "Forgot Password",
+    // (Simulate sending email)
+    console.log("Number sent to email:", correctNumber);
+
+    // STEP 3: VERIFY NUMBER
+    await Swal.fire({
+      title: "Email Verification",
       html: `
       <p style="margin-bottom:10px;">
-        Select the number which is sent to your registered email
+        Select the number sent to <b>${email}</b>
       </p>
-
-      <input 
-        type="email" 
-        class="swal2-input" 
-        value="user@example.com" 
-        readonly
-      />
 
       <div class="number-box-container">
         ${numbers
@@ -224,18 +238,15 @@ export default function AuthPage() {
         });
       },
       preConfirm: () => true,
-    }).then((result) => {
-      if (result.isConfirmed) {
-        Swal.fire({
-          icon: "success",
-          title: "Password Sent",
-          text: "Your password has been sent to your registered email ID.",
-        });
-      }
+    });
+
+    // STEP 4: SUCCESS
+    await Swal.fire({
+      icon: "success",
+      title: "Verified Successfully",
+      text: "Your password has been sent to your registered email ID.",
     });
   };
-
-
 
   return (
     <div className="auth-page">

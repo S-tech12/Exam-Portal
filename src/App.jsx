@@ -18,6 +18,7 @@ import PastExamForFaculty from "./pages/Faculty/PastExams";
 import FacultyExamAnalysis from "./pages/Faculty/AnalysisPage";
 import FacultyPaperChecking from "./pages/Faculty/PaperCheckingPage";
 import FacultyAnswerChecking from "./pages/Faculty/FacultyAnswerChecking";
+import PaperWithCorrectAnswer from "./pages/Student/PaperWithCorrectAnswer"
 
 function App() {
   return (
@@ -40,10 +41,10 @@ function App() {
           <Route path="/Faculty/UpcomingExams" element={<UpcomingExamForFaculty />} />
           <Route path="/Faculty/CurrentExams" element={<CurrentExamForFaculty />} />
           <Route path="/Faculty/PastExams" element={<PastExamForFaculty />} />
-          <Route path="/Faculty/PastExams/FacultyExamAnalysis" element={<FacultyExamAnalysis />} />
           <Route path="/Faculty/PastExams/FacultyPaperChecking" element={<FacultyPaperChecking />} />
           <Route path="/Faculty/PastExams/FacultyAnswerChecking" element={<FacultyAnswerChecking />} />
-
+          <Route path="/Faculty/PastExams/FacultyExamAnalysis" element={<FacultyExamAnalysis />} />
+          <Route path="/student/ExamReview" element={<PaperWithCorrectAnswer />} />
 
         </Routes>
       </BrowserRouter>

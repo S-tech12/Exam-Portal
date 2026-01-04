@@ -78,7 +78,7 @@ export default function ExamResultPage() {
 
         {/* BUTTON */}
         <div className="result-action">
-          <button>See Full Exam with Answers</button>
+          <button onClick={()=> navigate("/student/ExamReview")}>See Full Exam with Answers</button>
         </div>
 
       </div>
